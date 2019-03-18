@@ -1,0 +1,251 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SuperInvoke</name>
+    </assembly>
+    <members>
+        <member name="T:JacobGames.SuperInvoke.ISuperInvokeSequence">
+            <summary>
+            A sequence of an arbitrary number of custom delayed methods.
+            </summary>
+        </member>
+        <member name="M:JacobGames.SuperInvoke.ISuperInvokeSequence.AddMethod(System.Action,System.Single)">
+            <summary>
+            Adds a method to the sequence which will start after "delay" seconds from the previous method.
+            </summary>
+        </member>
+        <member name="M:JacobGames.SuperInvoke.ISuperInvokeSequence.AddMethod(System.Single,System.Action)">
+            <summary>
+            Adds a method to the sequence which will start after "delay" seconds from the previous method.
+            </summary>
+        </member>
+        <member name="M:JacobGames.SuperInvoke.ISuperInvokeSequence.AddDelay(System.Single)">
+            <summary>
+            Adds a delay.
+            </summary>
+        </member>
+        <member name="M:JacobGames.SuperInvoke.ISuperInvokeSequence.Run">
+            <summary>
+            Runs the sequence.
+            </summary>
+        </member>
+        <member name="M:JacobGames.SuperInvoke.ISuperInvokeSequence.Run(System.String)">
+            <summary>
+            Runs the sequence.
+            Tags the task with 'tag'.
+            </summary>
+            <param name="tage">The string tag used to tag the task.</param>
+        </member>
+        <member name="M:JacobGames.SuperInvoke.ISuperInvokeSequence.Run(JacobGames.SuperInvoke.SuperInvokeTag)">
+            <summary>
+            Runs the sequence.
+            Tags the task with 'tag'.
+            </summary>
+            <param name="tag">The SI tag used to tag the task.</param>      
+        </member>
+        <member name="M:JacobGames.SuperInvoke.ISuperInvokeSequence.Run(System.Single)">
+            <summary>
+            Runs the whole sequence after "delay" seconds.
+            </summary>
+        </member>
+        <member name="M:JacobGames.SuperInvoke.ISuperInvokeSequence.Run(System.Single,System.String)">
+            <summary>
+            Runs the whole sequence after "delay" seconds.
+            Tags the task with 'tag'.
+            </summary>
+            <param name="tagName">The string tag used to tag the task.</param>
+        </member>
+        <member name="M:JacobGames.SuperInvoke.ISuperInvokeSequence.Run(System.Single,JacobGames.SuperInvoke.SuperInvokeTag)">
+            <summary>
+            Runs the whole sequence after "delay" seconds.
+            Tags the task with 'tag'.
+            </summary>
+            <param name="tag">The SI tag used to tag the task.</param>
+        </member>
+        <member name="M:JacobGames.SuperInvoke.ISuperInvokeSequence.RunRepeat(System.Single,System.Single,System.Int32)">
+            <summary>
+            After 'delay' seconds, repeats the sequence 'repeats' times every 'repeatRate' seconds.
+            Any non-positive (zero or negative) value for 'repeats' will make the sequence repeat ad infinitum.
+            </summary>
+            <param name="delay">Initial delay after which the repeats will start.</param>
+            <param name="repeatRate">Seconds between each repeat.</param>
+            <param name="repeats">Total number of repeats. If 0 or negative will repeat infinite an number of times.</param>
+        </member>
+        <member name="M:JacobGames.SuperInvoke.ISuperInvokeSequence.RunRepeat(System.Single,System.Single,System.Int32,System.String)">
+            <summary>
+            After 'delay' seconds, repeats the sequence 'repeats' times every 'repeatRate' seconds.
+            Any non-positive (zero or negative) value for 'repeats' will make the sequence repeat ad infinitum.
+            Tags the task with 'tag'.
+            </summary>
+            <param name="delay">Initial delay after which the repeats will start.</param>
+            <param name="repeatRate">Seconds between each repeat.</param>
+            <param name="repeats">Total number of repeats. If 0 or negative will repeat infinite an number of times.</param>
+            <param name="tag">The string tag used to tag the task.</param>
+        </member>
+        <member name="M:JacobGames.SuperInvoke.ISuperInvokeSequence.RunRepeat(System.Single,System.Single,System.Int32,JacobGames.SuperInvoke.SuperInvokeTag)">
+            <summary>
+            After 'delay' seconds, repeats the sequence 'repeats' times every 'repeatRate' seconds.
+            Any non-positive (zero or negative) value for 'repeats' will make the sequence repeat ad infinitum.
+            Tags the task with 'tag'.
+            </summary>
+            <param name="delay">Initial delay after which the repeats will start.</param>
+            <param name="repeatRate">Seconds between each repeat.</param>
+            <param name="repeats">Total number of repeats. If 0 or negative will repeat infinite an number of times.</param>
+            <param name="tag">The SI tag used to tag the task.</param>
+        </member>
+        <member name="M:JacobGames.SuperInvoke.RepeatSettings.#ctor(System.Single,System.Single,System.Int32)">
+            <summary>
+            After 'delay' seconds, repeats for a 'repeats' number of times every 'repeatRate' seconds.
+            </summary>
+            <param name="initialDelay">Initial delay.</param>
+            <param name="delay">Initial delay after which the repeats will start.</param>
+            <param name="repeatRate">Seconds between each repeat.</param>
+            <param name="repeats">Total number of repeats.</param>
+        </member>
+        <member name="T:JacobGames.SuperInvoke.SuperInvoke">
+            <summary>
+            Code delays in simple ways.
+            </summary>
+        </member>
+        <member name="M:JacobGames.SuperInvoke.SuperInvoke.Run(System.Action,System.Single)">
+            <summary>
+            Runs a method after 'delay' seconds.
+            </summary>
+            <param name="method">Actual code to run after the delay.</param>
+            <param name="delay">Delay after which the method will run.</param>
+        </member>
+        <member name="M:JacobGames.SuperInvoke.SuperInvoke.Run(System.Single,System.Action)">
+            <summary>
+            Runs, after 'delay' seconds, a method.
+            </summary>
+            <param name="delay">Delay after which the method will run.</param>
+            <param name="method">Actual code to run after the delay.</param>
+        </member>
+        <member name="M:JacobGames.SuperInvoke.SuperInvoke.Run(System.Action,System.Single,JacobGames.SuperInvoke.SuperInvokeTag)">
+            <summary>
+            Runs a method after 'delay' seconds.
+            Tags the task with 'tag'.
+            </summary>
+            <param name="method">Actual code to run after the delay.</param>
+            <param name="delay">Delay after which the method will run.</param>
+            <param name="tag">The SI tag used to tag the task.</param>
+        </member>
+        <member name="M:JacobGames.SuperInvoke.SuperInvoke.Run(System.Action,System.Single,System.String)">
+            <summary>
+            Runs a method after 'delay' seconds.
+            Tags the task with 'tag'.
+            </summary>
+            <param name="method">Actual code to run after the delay.</param>
+            <param name="delay">Delay after which the method will run.</param>
+            <param name="tag">The string tag used to tag the task.</param>
+        </member>
+        <member name="M:JacobGames.SuperInvoke.SuperInvoke.Run(System.Single,JacobGames.SuperInvoke.SuperInvokeTag,System.Action)">
+            <summary>
+            Runs, after 'delay' seconds, a method.
+            Tags the task with 'tag'.
+            </summary>
+            <param name="delay">Delay after which the method will run.</param>
+            <param name="tag">The SI tag used to tag the task.</param>
+            <param name="method">Actual code to run after the delay.</param>
+        </member>
+        <member name="M:JacobGames.SuperInvoke.SuperInvoke.Run(System.Single,System.String,System.Action)">
+            <summary>
+            Runs, after 'delay' seconds, a method.
+            Tags the task with 'tag'.
+            </summary>
+            <param name="delay">Delay after which the method will run.</param>
+            <param name="tag">The string tag used to tag the task.</param>
+            <param name="method">Actual code to run after the delay.</param>
+        </member>
+        <member name="M:JacobGames.SuperInvoke.SuperInvoke.RunRepeat(System.Single,System.Single,System.Int32,System.Action)">
+            <summary>
+            After 'delay' seconds, repeats a method 'repeats' times every 'repeatRate' seconds.
+            Any non-positive (zero or negative) value for 'repeats' will make it repeat ad infinitum.
+            </summary>
+            <param name="delay">Initial delay after which the repeats will start.</param>
+            <param name="repeatRate">Seconds between each repeat.</param>
+            <param name="repeats">Total number of repeats. If 0 or negative will repeat infinite an number of times.</param>
+            <param name="method">Actual code to repeat.</param>
+        </member>
+        <member name="M:JacobGames.SuperInvoke.SuperInvoke.RunRepeat(System.Single,System.Single,System.Int32,System.String,System.Action)">
+            <summary>
+            After 'delay' seconds, repeats a method 'repeats' times every 'repeatRate' seconds.
+            Any non-positive (zero or negative) value for 'repeats' will make it repeat ad infinitum.
+            Tags the task with 'tag'.
+            </summary>
+            <param name="delay">Initial delay after which the repeats will start.</param>
+            <param name="repeatRate">Seconds between each repeat.</param>
+            <param name="repeats">Total number of repeats. If 0 or negative will repeat infinite an number of times.</param>
+            <param name="tag">The string tag used to tag the task.</param>
+            <param name="method">Actual code to repeat.</param>
+        </member>
+        <member name="M:JacobGames.SuperInvoke.SuperInvoke.RunRepeat(System.Single,System.Single,System.Int32,JacobGames.SuperInvoke.SuperInvokeTag,System.Action)">
+            <summary>
+            After 'delay' seconds, repeats a method 'repeats' times every 'repeatRate' seconds.
+            Any non-positive (zero or negative) value for 'repeats' will make it repeat ad infinitum.
+            Tags the task with 'tag'.
+            </summary>
+            <param name="delay">Initial delay after which the repeats will start.</param>
+            <param name="repeatRate">Seconds between each repeat.</param>
+            <param name="repeats">Total number of repeats. If 0 or negative will repeat infinite an number of times.</param>
+            <param name="tag">The SI tag used to tag the task.</param>
+            <param name="method">Actual code to repeat.</param>
+        </member>
+        <member name="M:JacobGames.SuperInvoke.SuperInvoke.CreateSequence">
+            <summary> 
+            Creates an empty sequence.
+            </summary>
+        </member>
+        <member name="M:JacobGames.SuperInvoke.SuperInvoke.CreateTag">
+            <summary>
+            Returns a unique SI Tag any time it is called.
+            </summary>
+        </member>
+        <member name="M:JacobGames.SuperInvoke.SuperInvoke.Kill(JacobGames.SuperInvoke.SuperInvokeTag)">
+            <summary>
+            Kills all tasks added in run that were tagged with 'tag'.
+            </summary>
+            <param name="tag">The SI tag of the tasks added in run that must be killed, i.e. no more executed.</param>
+        </member>
+        <member name="M:JacobGames.SuperInvoke.SuperInvoke.Kill(System.String)">
+            <summary>
+            Kills all tasks added in run that were tagged with 'tag'.
+            </summary>
+            <param name="tagName">The string tag of the tasks added in run that must be killed, i.e. no more executed.</param>
+        </member>
+        <member name="M:JacobGames.SuperInvoke.SuperInvoke.KillAll">
+            <summary>
+            Kills all tasks added in run.
+            Any task (method or sequence) delayed and not yet executed will not be executed.
+            Any sequence in execution will immediately stop its execution.
+            Any repeated task will stop its execution and will not be repeated anymore.
+            </summary>
+        </member>
+        <member name="M:JacobGames.SuperInvoke.SuperInvoke.KillAllExcept(JacobGames.SuperInvoke.SuperInvokeTag[])">
+            <summary>
+            Kills all tasks added in run except those tagged with 'tag(s)'.
+            </summary>
+            <param name="tags">The SI tag(s) of the tasks added in run that must remain alive.</param>
+        </member>
+        <member name="M:JacobGames.SuperInvoke.SuperInvoke.KillAllExcept(System.String[])">
+            <summary>
+            Kills all tasks added in run except those tagged with 'tag(s)'.
+            </summary>
+            <param name="tagNames">The string tag(s) of the tasks added in run that must remain alive.</param>
+        </member>
+        <member name="M:JacobGames.SuperInvoke.SuperInvoke.AnyInRun(System.String)">
+            <summary>
+            Returns true if there is at least one task added in run tagged 'tag' and its execution is not yet finished.
+            </summary>
+            <returns><c>true</c>If at least one task tagged with 'tag' is in run.<c>false</c> otherwise.</returns>
+            <param name="tag">The string tag.</param>
+        </member>
+        <member name="M:JacobGames.SuperInvoke.SuperInvoke.AnyInRun(JacobGames.SuperInvoke.SuperInvokeTag)">
+            <summary>
+            Returns true if there is at least one task added in run tagged 'tag' and its execution is not yet finished.
+            </summary>
+            <returns><c>true</c>If at least one task tagged with 'tag' is in run.<c>false</c> otherwise.</returns>
+            <param name="tag">The SI tag.</param>
+        </member>
+    </members>
+</doc>

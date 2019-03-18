@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8022d6092f47f474aa49d367da717ab4
+labels:
+- Tag
+- TagManager
+- Multitag
+- AllTheTags
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {fileID: 2800000, guid: a1d92ab0dd1299a4abf0379eaf66d346, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\27345\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\27345\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_ArtDesignPriject.-778304993.00" t="ExcludeRecursive" />
+    <e p="E:\ArtDesignTools\U3D\ArtDesignPriject" t="IncludeRecursive">
+      <e p="ArtDesignPriject.sln" t="IncludeFlat" />
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets\Character_Death_FX" t="Include">
+        <e p="Shader" t="Include">
+          <e p="WFX_Additive.shader" t="Include" />
+        </e>
+      </e>
+      <e p="Assets\Plugins" t="Include">
+        <e p="DOTween" t="Include">
+          <e p="Modules" t="Include">
+            <e p="DOTweenModuleAudio.cs" t="Include" />
+            <e p="DOTweenModulePhysics.cs" t="Include" />
+            <e p="DOTweenModulePhysics2D.cs" t="Include" />
+            <e p="DOTweenModuleSprite.cs" t="Include" />
+            <e p="DOTweenModuleUI.cs" t="Include" />
+            <e p="DOTweenModuleUnityVersion.cs" t="Include" />
+            <e p="DOTweenModuleUtils.cs" t="Include" />
+          </e>
+          <e p="readme.txt" t="Include" />
+        </e>
+      </e>
+      <e p="Assets\Realistic Effects Pack" t="Include">
+        <e p="readme.txt" t="Include" />
+        <e p="Scripts" t="Include">
+          <e p="Demo" t="Include">
+            <e p="MyGui.cs" t="Include" />
+          </e>
+          <e p="Prefabs" t="Include">
+            <e p="Balls" t="Include">
+              <e p="ProjectileCollisionBehaviour.cs" t="Include" />
+            </e>
+            <e p="Buffs" t="Include">
+              <e p="ShieldCollisionBehaviour.cs" t="Include" />
+              <e p="WaterCollisionBehaviour.cs" t="Include" />
+              <e p="WaterUvAnimation.cs" t="Include" />
+              <e p="WaterWaveUvAnimation.cs" t="Include" />
+            </e>
+            <e p="Shots" t="Include">
+              <e p="LineRendererBehaviour.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Share" t="Include">
+            <e p="CollisionActiveBehaviour.cs" t="Include" />
+            <e p="DeadTime.cs" t="Include" />
+            <e p="EffectSettings.cs" t="Include" />
+            <e p="FadeInOutLight.cs" t="Include" />
+            <e p="FadeInOutParticles.cs" t="Include" />
+            <e p="FadeInOutScale.cs" t="Include" />
+            <e p="FadeInOutShaderColor.cs" t="Include" />
+            <e p="FadeInOutShaderFloat.cs" t="Include" />
+            <e p="FadeInOutStatus.cs" t="Include" />
+            <e p="OnStartSendCollision.cs" t="Include" />
+            <e p="QueueUvAnimation.cs" t="Include" />
+            <e p="RandomPosition.cs" t="Include" />
+            <e p="RandomRotate.cs" t="Include" />
+            <e p="UVTextureAnimator.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Shaders" t="Include">
+          <e p="DiffuseRim.shader" t="Include" />
+          <e p="DiffuseRimSpecular.shader" t="Include" />
+          <e p="Distortion" t="Include">
+            <e p="Distortion.shader" t="Include" />
+            <e p="DistortionCullBack+1.shader" t="Include" />
+            <e p="DistortionCullOff.shader" t="Include" />
+            <e p="DistortionCutOut.shader" t="Include" />
+            <e p="DistortionCutOutBack.shader" t="Include" />
+            <e p="Free" t="Include">
+              <e p="FreeDistortionCullBack.shader" t="Include" />
+              <e p="FreeDistortionCullOff.shader" t="Include" />
+              <e p="FreeDistortionCutOut.shader" t="Include" />
+            </e>
+          </e>
+          <e p="GlowAdditive.shader" t="Include" />
+          <e p="GlowAdditiveSimple.shader" t="Include" />
+          <e p="GlowAdditiveTwoColor.shader" t="Include" />
+          <e p="Particles.shader" t="Include" />
+          <e p="Rim.shader" t="Include" />
+          <e p="Water.shader" t="Include" />
+          <e p="WaterFree.shader" t="Include" />
+        </e>
+      </e>
+      <e p="Assets\Scripts" t="Include">
+        <e p="MainGUI.cs" t="Include" />
+        <e p="Move.cs" t="Include" />
+        <e p="Shoot.cs" t="Include" />
+      </e>
+      <e p="Assets\VFX" t="Include">
+        <e p="Shader" t="Include">
+          <e p="Distort.shader" t="Include" />
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>
